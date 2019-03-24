@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
 
-//@Repository("userRole")
+@Repository("userRoleRepository")
 public interface UserRoleRepository extends JpaRepository<UserRole, Serializable> {
-   // public abstract UserRole findById(String userRoleId);
+   public abstract UserRole findByUserRoleId(int id);
 }

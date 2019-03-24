@@ -24,8 +24,8 @@ public class LogServiceImpl implements LogService {
     private LogConverter logConverter;
 
     @Override
-    public LogModel addLog(LogModel logModel) {
-        //Aquí nos pide una entidad, por lo tanto tenemos que transformar el contactModel a entidad
+    public LogModel addLog(LogModel logModel) throws Exception {
+        //Aquí nos pide una entidad, por lo tanto tenemos que transformar el logModel a entidad
         Log temp=logConverter.convertToLogModel2Log(logModel);
         Log log = logRepository.save(temp);
         return logConverter.convertLog2LogModel(log);

@@ -6,25 +6,25 @@ import lombok.Data;
 @Data
 public class UserRoleModel {
     private int userRoleId;
-    private User user;
+    private String user;
     private String role;
 
     public UserRoleModel(){
 
     }
 
-    public UserRoleModel(int userRoleId, User user, String role){
+    /*public UserRoleModel(int userRoleId, User user, String role){
         this.userRoleId = userRoleId;
         this.user = user;
         this.role = role;
-    }
+    }*/
 
-    @Override
+    /*@Override
     public String toString() {
         return "UserRoleModel{" +
                 "userRoleId=" + userRoleId +
                 ", user='" + user + '\'' +
                 ", role='" + role + '\'' +
                 '}';
-    }
+    }*/
 }

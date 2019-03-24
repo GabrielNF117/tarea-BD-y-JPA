@@ -7,6 +7,8 @@ public class ViewConstant {
     public static final String LOGS = "logs";
     public static final String USER_FORM = "userform";
     public static final String USERS = "users";
+    public static final String USERROLE_FORM = "userroleform";
+    public static final String USERROLES = "userroles";
 
 
 

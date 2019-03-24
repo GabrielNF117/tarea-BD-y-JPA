@@ -33,7 +33,7 @@ public class UserController {
     public String redirectUserForm(Model model,
                                   @RequestParam(name = "username", required = false) String username){
         UserModel userModel = new UserModel();
-        if(username != null){
+        if(!username.equals("none")){
             userModel = userService.findUserByIdModel(username);
         }
         model.addAttribute("userModel", userModel);
@@ -41,7 +41,7 @@ public class UserController {
     }
 
     @PostMapping("/adduser")
-    //El ModelAttribute corresponde con el th:object que utilizamos en la vista de contactform
+    //El ModelAttribute corresponde con el th:object que utilizamos en la vista de userform
     public String addUser(@ModelAttribute(name = "userModel")UserModel userModel,
                          Model model){
         log.info("Method: addUser() -- Params: "+userModel.toString());

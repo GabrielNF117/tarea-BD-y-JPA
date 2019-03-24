@@ -8,7 +8,7 @@ import java.util.Date;
 public class LogModel {
 
     private int id;
-    private Date date;
+    private String date;
     private String details;
     private String username;
     private String url;
@@ -17,7 +17,8 @@ public class LogModel {
 
     }
 
-    public LogModel(int id, Date date, String details, String username, String url){
+    /*
+    public LogModel(int id, String date, String details, String username, String url){
 
         this.id = id;
         this.date = date;
@@ -25,9 +26,10 @@ public class LogModel {
         this.username = username;
         this.url = url;
 
-    }
+    }*/
 
 
+    /*
     @Override
     public String toString() {
         return "LogModel{" +
@@ -37,5 +39,5 @@ public class LogModel {
                 ", username='" + username + '\'' +
                 ", url='" + url + '\'' +
                 '}';
-    }
+    }*/
 }

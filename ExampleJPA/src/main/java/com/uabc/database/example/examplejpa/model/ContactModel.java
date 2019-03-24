@@ -11,13 +11,14 @@ public class ContactModel {
 
     }
 
+    /*
     public ContactModel(int id, String firstName, String lastName, String telephone, String city) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.telephone = telephone;
         this.city = city;
-    }
+    }*/
 
     public int getId() {
         return id;

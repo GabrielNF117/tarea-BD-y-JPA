@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserModel addUser(UserModel userModel) {
-        //Aquí nos pide una entidad, por lo tanto tenemos que transformar el contactModel a entidad
+        //Aquí nos pide una entidad, por lo tanto tenemos que transformar el userModel a entidad
         User temp=userConverter.convertToUserModel2User(userModel);
         User user = userRepository.save(temp);
         return userConverter.convertUser2UserModel(user);
